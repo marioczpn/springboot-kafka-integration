@@ -39,7 +39,7 @@ public class OrderEventControllerUnitTest {
 	private ObjectMapper objectMapper = new ObjectMapper();
 
 	@Test
-	public void testPostOrderEvent() throws Exception {
+	void testPostOrderEvent() throws Exception {
 		// given
 		OrderValue orderValue = OrderValue.builder().orderId(123).orderName("or-0102").orderDevice("iphone").build();
 
@@ -54,7 +54,7 @@ public class OrderEventControllerUnitTest {
 	}
 
 	@Test
-	public void whenOrderValueRequestIsNull_throwsStatus400() throws Exception {
+	void whenOrderValueRequestIsNull_throwsStatus400() throws Exception {
 		// given
 		OrderEvent orderEvent = OrderEvent.builder().orderEventId(null).order(null).build();
 
@@ -67,7 +67,7 @@ public class OrderEventControllerUnitTest {
 	}
 
 	@Test
-	public void whenNoPopulatedOrderValueObjectIsPassed_throwsStatus400() throws Exception {
+	void whenNoPopulatedOrderValueObjectIsPassed_throwsStatus400() throws Exception {
 		// given
 		OrderEvent orderEvent = OrderEvent.builder().orderEventId(null).order(new OrderValue()).build();
 

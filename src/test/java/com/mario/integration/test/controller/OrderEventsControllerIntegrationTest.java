@@ -63,7 +63,7 @@ public class OrderEventsControllerIntegrationTest {
 
 	@Test
 	@Timeout(5)
-	public void postOrderEvent() throws InterruptedException {
+	void postOrderEvent() throws InterruptedException {
 		//given
 		OrderValue orderValue = OrderValue.builder().orderId(123).orderName("or-0102").orderDevice("iphone").build();
 		
@@ -71,6 +71,8 @@ public class OrderEventsControllerIntegrationTest {
 		
 		HttpHeaders headers = new HttpHeaders();
 		headers.set("content-type", MediaType.APPLICATION_JSON.toString());
+
+		// Encapsulates header and body of an HTTP request or response.
 		HttpEntity<OrderEvent> request = new HttpEntity<>(orderEvent, headers);
 		
 		//when

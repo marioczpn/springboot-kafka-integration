@@ -27,6 +27,7 @@ export DOCKER_HOST_IP=127.0.0.1
  ```
  
  ## Run the project using the IDE 
+ + Install the lombok dependency - https://projectlombok.org/download
  + Import this project as Maven into your IDE. (I'm using Spring Tool Suite 4.)
  + Look for the class OrderEventsProducerApplication and execute to start the SpringBoot application
  

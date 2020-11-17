@@ -40,7 +40,7 @@ Now you can see message bellow:
 2020-11-16 23:52:42.843  INFO 20384 --- [           main] c.m.k.m.OrderEventsProducerApplication   : Started OrderEventsProducerApplication in 4.002 seconds (JVM running for 8.487)
 ```
 
-To send the message to the *kafka-event-producer* you can use JSON Tool (Postman, Insomnia) or CURL (command-line tool) and send the POST Request to http://localhost:8080/v1/libraryevent.
+To send the message to the *kafka-event-producer* you can use JSON Tool (Postman, Insomnia) or CURL (command-line tool) and send the POST Request to http://localhost:8080/v1/orderevent.
 
 JSON Request:
 ```
@@ -60,7 +60,7 @@ If you prefer to send a request as a command-line.
 curl -i \
 -d '{"orderEventId":null, "orderEventType" : "NEW", "order":{"orderId":1,"orderName":"ord-001","orderDevice":"iphone"}}' \
 -H "Content-Type: application/json" \
--X POST http://localhost:8080/v1/libraryevent
+-X POST http://localhost:8080/v1/orderevent
 ```
 
 You can consume the message using the kafka-console-cosumer cli:

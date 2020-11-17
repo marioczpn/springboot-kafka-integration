@@ -67,7 +67,7 @@ public class OrderEventControllerUnitTest {
 	}
 
 	@Test
-	public void whenOrderValueObjectIsPassedAsNull_throwsStatus400() throws Exception {
+	public void whenNoPopulatedOrderValueObjectIsPassed_throwsStatus400() throws Exception {
 		// given
 		OrderEvent orderEvent = OrderEvent.builder().orderEventId(null).order(new OrderValue()).build();
 

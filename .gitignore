@@ -1,5 +1,6 @@
 HELP.md
 target/
+bin/
 zk-single-kafka-multiple/
 zk-single-kafka-single/
 !.mvn/wrapper/maven-wrapper.jar

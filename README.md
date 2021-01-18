@@ -1,5 +1,5 @@
 # springboot-kafka-integration
-This is a home lab implementation, based on the concepts that I learned during these days. The primary goal was integrate java using springboot with Kafka and add unit/integration tests using JUnit5.
+This is a home lab implementation. The primary goal was integrate java using springboot with Kafka and add unit/integration tests using JUnit5.
 
 For this specific project, I'm just implementing the __kafka-event-producer__ so far. Basically this producer is a client application that publish (write) events to Kafka topic.
 
